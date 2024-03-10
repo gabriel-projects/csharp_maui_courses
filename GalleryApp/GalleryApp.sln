@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GalleryApp", "GalleryApp\GalleryApp.csproj", "{723C1366-0E13-47A2-8292-DD2C0EF61FCA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{723C1366-0E13-47A2-8292-DD2C0EF61FCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{723C1366-0E13-47A2-8292-DD2C0EF61FCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{723C1366-0E13-47A2-8292-DD2C0EF61FCA}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{723C1366-0E13-47A2-8292-DD2C0EF61FCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{723C1366-0E13-47A2-8292-DD2C0EF61FCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{723C1366-0E13-47A2-8292-DD2C0EF61FCA}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF7FD2DA-C5F4-4651-ABB7-09A5597A2879}
+	EndGlobalSection
+EndGlobal

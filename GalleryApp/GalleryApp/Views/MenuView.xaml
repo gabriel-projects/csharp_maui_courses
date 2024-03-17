@@ -12,9 +12,6 @@
         <Label Text="Extra" />
         <Label Text="Credits" />
 
-
-        <Label Text="Layout" />
-        <Label Text="Staclayout" />
-        <Label Text="Description ......." />
+        <VerticalStackLayout x:Name="MenuContainer" />
     </VerticalStackLayout>
 </ContentPage>

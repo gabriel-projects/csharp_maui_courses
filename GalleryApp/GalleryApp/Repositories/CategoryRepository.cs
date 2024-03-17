@@ -23,14 +23,14 @@ namespace GalleryApp.Repositories
                 {
                     Name = "Layout",
                     Components = new List<Component>
-                {
-                    new Component
                     {
-                        Title = "StackLayout",
-                        Description = "Sequential organization of elements",
-                        Page = new StackLayoutPage()
+                        new Component
+                        {
+                            Title = "StackLayout",
+                            Description = "Sequential organization of elements",
+                            Page = new StackLayoutPage()
+                        }
                     }
-                }
                 }
             };
 

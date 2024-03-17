@@ -2,16 +2,21 @@
 <ContentPage x:Class="GalleryApp.Views.MenuView"
              xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             Title="MenuView">
-    <VerticalStackLayout>
-        <Label HorizontalOptions="Center"
-               Text="NET Maui - Gallery"
+             Title="Menu"
+             Padding="20"
+             BackgroundColor="#F3F3F3">
+    <VerticalStackLayout Spacing="1">
+        <Label Margin="30"
+               FontFamily="OpenSansSemibold"
+               FontSize="24"
+               HorizontalOptions="Center"
+               Text="Maui - Gallery"
                VerticalOptions="Center" />
 
         <Label Text="Start" />
         <Label Text="Extra" />
         <Label Text="Credits" />
 
-        <VerticalStackLayout x:Name="MenuContainer" />
+        <VerticalStackLayout x:Name="MenuContainer" Margin="0,10,0,0" />
     </VerticalStackLayout>
 </ContentPage>

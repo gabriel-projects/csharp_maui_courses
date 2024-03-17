@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage x:Class="GalleryApp.Views.FlyoutMainView"
+            xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:pages="clr-namespace:GalleryApp.Views"
+            Title="FlyoutMainView"
+            FlyoutLayoutBehavior="Popover">
+    <FlyoutPage.Flyout>
+        <pages:MenuView />
+    </FlyoutPage.Flyout>
+
+    <FlyoutPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <pages:MainView />
+            </x:Arguments>
+        </NavigationPage>
+    </FlyoutPage.Detail>
+</FlyoutPage>

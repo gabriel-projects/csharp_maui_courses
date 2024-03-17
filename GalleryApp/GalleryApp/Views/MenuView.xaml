@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="GalleryApp.Views.MenuView"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="MenuView">
+    <VerticalStackLayout>
+        <Label HorizontalOptions="Center"
+               Text="NET Maui - Gallery"
+               VerticalOptions="Center" />
+
+        <Label Text="Start" />
+        <Label Text="Extra" />
+        <Label Text="Credits" />
+
+
+        <Label Text="Layout" />
+        <Label Text="Staclayout" />
+        <Label Text="Description ......." />
+    </VerticalStackLayout>
+</ContentPage>

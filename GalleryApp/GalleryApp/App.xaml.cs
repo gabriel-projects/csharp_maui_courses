@@ -1,4 +1,6 @@
-﻿namespace GalleryApp
+﻿using GalleryApp.Views;
+
+namespace GalleryApp
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new FlyoutMainView();
         }
     }
 }

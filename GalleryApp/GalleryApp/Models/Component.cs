@@ -10,7 +10,7 @@ namespace GalleryApp.Models
     {
         public string Title { get; set; }
         public string Description { get; set; }
-        public Page Page { get; set; }
+        public Type Type { get; set; }
         public bool IsReplaceMainPage { get; set; } = false;
     }
 }

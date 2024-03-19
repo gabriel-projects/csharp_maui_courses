@@ -28,7 +28,7 @@ namespace GalleryApp.Repositories
                         {
                             Title = "StackLayout",
                             Description = "Sequential organization of elements",
-                            Page = new StackLayoutPage()
+                            Type = typeof(StackLayoutPage)
                         }
                     }
                 }

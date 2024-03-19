@@ -22,7 +22,7 @@ public partial class MenuView : ContentPage
             foreach (var component in category.Components)
 			{
 				var tap = new TapGestureRecognizer();
-				tap.CommandParameter = component.Page;
+				tap.CommandParameter = component.Type;
                 tap.Tapped += OnTapComponent;
 
 				var lblComponentTitle = new Label();
@@ -46,9 +46,15 @@ public partial class MenuView : ContentPage
     {
 		var label = (Label)sender;
 		var tap = (TapGestureRecognizer)label.GestureRecognizers[0];
-		var page = (Page)tap.CommandParameter;
+		var type = (Type)tap.CommandParameter;
 
-		((FlyoutPage)App.Current.MainPage).Detail = page;
+		((FlyoutPage)App.Current.MainPage).Detail = new NavigationPage((Page)Activator.CreateInstance(type));
 		((FlyoutPage)App.Current.MainPage).IsPresented = false;
+    }
+
+    private void OnTapStart(object sender, TappedEventArgs e)
+    {
+        ((FlyoutPage)App.Current.MainPage).Detail = new NavigationPage(new MainView());
+        ((FlyoutPage)App.Current.MainPage).IsPresented = false;
     }
 }

@@ -29,6 +29,18 @@ namespace GalleryApp.Repositories
                             Title = "StackLayout",
                             Description = "Sequential organization of elements",
                             Type = typeof(StackLayoutPage)
+                        },
+                        new Component
+                        {
+                            Title = "GridLayout",
+                            Description = "Organize elements inside from table",
+                            Type = typeof(GridLayoutPage)
+                        },
+                        new Component
+                        {
+                            Title = "AbsolutLayout",
+                            Description = "",
+                            Type = typeof(AbsolutLayoutPage)
                         }
                     }
                 }

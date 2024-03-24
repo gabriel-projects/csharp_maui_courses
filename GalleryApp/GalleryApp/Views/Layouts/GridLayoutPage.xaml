@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="GalleryApp.Views.Layouts.GridLayoutPage"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="GridLayoutPage">
+    <Grid Margin="20" BackgroundColor="AliceBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <BoxView Color="MediumAquamarine" />
+        <Label Text="Olá Mundo!" />
+        
+        
+        <BoxView Color="ForestGreen" Grid.Column="1"/>
+    </Grid>
+</ContentPage>

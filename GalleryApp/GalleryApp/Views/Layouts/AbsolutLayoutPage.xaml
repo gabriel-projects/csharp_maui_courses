@@ -1,12 +1,32 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+<ContentPage x:Class="GalleryApp.Views.Layouts.AbsolutLayoutPage"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="GalleryApp.Views.Layouts.AbsolutLayoutPage"
              Title="AbsolutLayoutPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <AbsoluteLayout>
+        <Label AbsoluteLayout.LayoutBounds="150, 0, 100, 50"
+               BackgroundColor="LightGray"
+               Text="hello world" />
+
+        <Button AbsoluteLayout.LayoutBounds="0.5, 0.5, 0.3, 0.3"
+                AbsoluteLayout.LayoutFlags="All"
+                Text="Click Me" />
+
+        <BoxView AbsoluteLayout.LayoutBounds="150, 200"
+                 HeightRequest="50"
+                 WidthRequest="50"
+                 Color="Blue" />
+        <BoxView AbsoluteLayout.LayoutBounds="175, 225"
+                 HeightRequest="50"
+                 WidthRequest="50"
+                 Color="Aquamarine" />
+        <BoxView AbsoluteLayout.LayoutBounds="200, 250"
+                 HeightRequest="50"
+                 WidthRequest="50"
+                 Color="ForestGreen" />
+        <BoxView AbsoluteLayout.LayoutBounds="225, 275"
+                 HeightRequest="50"
+                 WidthRequest="50"
+                 Color="Yellow" />
+    </AbsoluteLayout>
 </ContentPage>

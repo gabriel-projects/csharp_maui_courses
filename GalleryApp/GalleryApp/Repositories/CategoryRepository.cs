@@ -39,8 +39,14 @@ namespace GalleryApp.Repositories
                         new Component
                         {
                             Title = "AbsolutLayout",
-                            Description = "",
+                            Description = "total freedom to position and size elements on the screen",
                             Type = typeof(AbsolutLayoutPage)
+                        },
+                        new Component
+                        {
+                            Title = "FlexLayout",
+                            Description = "organizes the elements sequentially and has a lot of customization",
+                            Type = typeof(FlexLayoutPage)
                         }
                     }
                 }
